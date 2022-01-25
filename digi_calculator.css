@@ -1,0 +1,44 @@
+.digiCalculator {
+  display: none;
+  background-color: rgba(170, 197, 223, 0.842);
+  width: 85vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 3vw;
+}
+.containerCalcy {
+  text-align: center;
+  margin-top: 25px;
+}
+.containerCalcy > h1 {
+  font-size: 45px;
+}
+table {
+  margin: 0px auto;
+  height: auto;
+}
+.calcy > input {
+  font-size: 33px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+td > button {
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.911);
+  color: snow;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 2px;
+}
+button:hover {
+  background-color: rgb(17, 70, 122);
+}
+.calcy {
+  display: inline-block;
+  background-color: rgb(128, 128, 128);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.322);
+  box-shadow: 0.2vw 0.3vw 0 grey;
+}

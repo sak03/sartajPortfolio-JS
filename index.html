@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>sartaj alam</title>
+    <link rel="icon" class="rounded" href="photo2.jpeg">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- local styalesheet -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="analog_clock.css">
+    <link rel="stylesheet" href="digi_clock.css">
+    <link rel="stylesheet" href="digi_calculator.css">
+    <link rel="stylesheet" href="tictac.css">
+
+</head>
+
+<body onload="initClock()">
+
+    <!-- navigation bar details -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top bg-nav"
+        style="font-family: 'Roboto', sans-serif; opacity: 0.9;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light hovr" href="#"><span>S</span>ARTAJ
+                <span>A</span>LAM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active text-light hovr" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light hovr" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-light hovr" href="#miniProjects"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mini Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item hovr" href="#miniProjects">Analog Clock</a></li>
+                            <li><a class="dropdown-item hovr" href="#miniProjects">Digital Clock</a></li>
+                            <li><a class="dropdown-item hovr" href="#miniProjects">Calculator</a></li>
+                            <li><a class="dropdown-item hovr" href="#miniProjects">Tic Tac Toe game</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-light hovr" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Major Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item hovr" href="#weather">Weather Forecast</a></li>
+                            <li><a class="dropdown-item hovr" href="#library">Public Library</a></li>
+                            <li><a class="dropdown-item hovr" href="#electroForce">ElectroForce</a></li>
+                            <li><a class="dropdown-item hovr" href="#textUtils">TextUtils</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light hovr" href="#aboutMe">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light hovr mx-2" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- landing front window -->
+    <div class="container1 card mb-3">
+        <div class="row g-0">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card-body my-5 mx-5 float-md-start">
+                    <h5 class="card-title text-light mx-5 fs-1"
+                        style="font-size: 5vw !important; font-family: 'Roboto', sans-serif;">Hello,</h5>
+                    <p class="card-text text-light mx-5 fs-2"
+                        style="font-size: 4vw !important; font-family: 'Roboto', sans-serif;">My Name is</p>
+                    <p class="card-text text-light mx-5 fs-1"
+                        style="font-size: 5vw !important; font-family: 'Roboto', sans-serif;">Sartaj</p>
+                    <p><small class="text-light mx-5 fs-1"
+                            style="font-size: 2vw !important; font-family: 'Roboto', sans-serif">I'm a Front End Web
+                            Developer</small></p>
+                    <a class="btn btn-outline-danger mx-5"
+                        style="font-size: 2vw !important; font-family: 'Roboto', sans-serif;" href="#miniProjects"
+                        role="button">Portfolio</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="photo1.jpeg" class="img-fluid rounded-start" alt="Sartaj" title="Sartaj"
+                    style="height: 88vh;">
+            </div>
+            <a name="skills"></a>
+        </div>
+    </div>
+
+    <!-- code for skills data -->
+    <h1 class="mx-5 my-3"><span>S</span>kills</h1>
+    <div class="card-group">
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?html" class="card-img-top" title="HTML 5" alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">HTML 5</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" style="font-size: 5vh;"><span>* * * *</span> *</small>
+            </div>
+        </div>
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?css,code" class="card-img-top" title="CSS & Bootstrap"
+                alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">CSS & Bootstrap</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" style="font-size: 5vh;"><span>* * * *</span> *</small>
+            </div>
+        </div>
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?code,javascript" class="card-img-top" title="JavaScript"
+                alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" style="font-size: 5vh;"><span>* * * *</span> *</small>
+            </div>
+        </div>
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?code,react" class="card-img-top" title="React JS"
+                alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">React JS</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" style="font-size: 5vh;"><span>* * *</span> * *</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- mini projects with js preview -->
+    <a name="miniProjects"></a>
+    <h1 class="mx-5 my-4"><span>M</span>ini <span>P</span>rojects</h1>
+    <div class="card-group">
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?analog,clock" class="card-img-top" title="Analog Clock"
+                alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">Analog Clock</h5>
+                <p class="card-text">
+                <ul>
+                    <li>This is a real time analog clock.</li>
+                    <li>Fully functional and responsive.</li>
+                    <li><a href="https://github.com/sak03/analog_clock" target="blank">GitHub repositorie link >></a>
+                    </li>
+                </ul>
+                </p>
+                <a class="btn btn-outline-primary" onclick="analogClock()" role="button">Project preview</a>
+            </div>
+        </div>
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?digital,clock,watch" class="card-img-top"
+                title="Digital Clock" alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">Digital Clock</h5>
+                <p class="card-text">
+                <ul>
+                    <li>This is a real time digital clock.</li>
+                    <li>Fully functional and responsive.</li>
+                    <li><a href="https://github.com/sak03/digital-clock" target="blank">GitHub repositorie link >></a>
+                    </li>
+                </ul>
+                </p>
+                <a class="btn btn-outline-primary" onclick="digiClock()" role="button">Project preview</a>
+            </div>
+        </div>
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?calculator,mathematics" class="card-img-top"
+                title="Digital Calculator" alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">Digital Calculator</h5>
+                <p class="card-text">
+                <ul>
+                    <li>This is a simple digital calculator.</li>
+                    <li>Fully functional and responsive.</li>
+                    <li><a href="https://github.com/sak03/Calculator" target="blank">GitHub repositorie link >></a>
+                    </li>
+                </ul>
+                </p>
+                <a class="btn btn-outline-primary" onclick="digiCalculator()" role="button">Project preview</a>
+            </div>
+        </div>
+        <div class="card mx-3">
+            <img src="https://source.unsplash.com/500x500/?tic-tac-toe,games" class="card-img-top"
+                title="Tic Tac Toe Game" alt="Error">
+            <div class="card-body">
+                <h5 class="card-title">Tic Tac Toe Game</h5>
+                <p class="card-text">
+                <ul>
+                    <li>This is a Tic Tac Toe game.</li>
+                    <li>Fully functional and responsive.</li>
+                    <li><a href="https://github.com/sak03/tic-tac-toe" target="blank">GitHub repositorie link >></a>
+                    </li>
+                </ul>
+                </p>
+                <a class="btn btn-outline-primary" onclick="tictac()" role="button">Project preview</a>
+            </div>
+        </div>
+    </div> <br>
+
+    <!-- analog clock code -->
+    <div class="analogClock border py-5" id="analogClock">
+        <a class="btn btn-primary float-end bg-danger text-light" type="clear" role="button" onclick="cancle()">X</a>
+        <div id="clockContainer">
+            <div id="hour"></div>
+            <div id="minut"></div>
+            <div id="second"></div>
+        </div>
+    </div>
+
+    <!-- digital clock code -->
+    <div class="digiClock" id="digiClock">
+        <a class="btn btn-primary float-end bg-danger text-light" type="clear" role="button" onclick="cancle()">X</a>
+        <div class="container">
+            <div class="datetime">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="daynum">00</span>,
+                    <span id="year">Year</span>
+                </div>
+                <div class="time">
+                    <span id="hours">00</span> :
+                    <span id="minutes">00</span> :
+                    <span id="seconds">00</span>
+                    <span id="periods">AM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- digital calculator code -->
+    <div class="digiCalculator" id="digiCalculator">
+        <div class="containerCalcy">
+            <a class="btn btn-primary float-end bg-danger text-light" type="clear" role="button"
+                onclick="cancle()">X</a>
+            <h1> Digital Calculator</h1>
+
+            <div class="calcy">
+                <input type="text" name="screen" id="screen">
+                <table>
+                    <tr>
+                        <td><button>(</button></td>
+                        <td><button>)</button></td>
+                        <td><button style="background-color: red;">C</button></td>
+                        <td><button>%</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>7</button></td>
+                        <td><button>8</button></td>
+                        <td><button>9</button></td>
+                        <td><button>X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>4</button></td>
+                        <td><button>5</button></td>
+                        <td><button>6</button></td>
+                        <td><button>-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>1</button></td>
+                        <td><button>2</button></td>
+                        <td><button>3</buttoni>
+                        </td>
+                        <td><button>+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>0</button></td>
+                        <td><button>.</button></td>
+                        <td><button>/</button></td>
+                        <td><button style="background-color: rgb(2, 255, 2);">=</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- tic tac toe game code -->
+    <div class="tictac" id="tictac">
+        <a class="btn btn-primary float-end bg-danger text-light" type="clear" role="button" onclick="cancle()">X</a>
+        <div class="gameContainer">
+            <div class="containerTictac">
+                <div class="box bl-0 bt-0"><span class="boxtext text-dark"></span></div>
+                <div class="box bt-0"><span class="boxtext text-dark"></span></div>
+                <div class="box bt-0 br-0"><span class="boxtext text-dark"></span></div>
+                <div class="box bl-0"><span class="boxtext text-dark"></span></div>
+                <div class="box"><span class="boxtext text-dark"></span></div>
+                <div class="box br-0"><span class="boxtext text-dark"></span></div>
+                <div class="box bl-0 bb-0"><span class="boxtext text-dark"></span></div>
+                <div class="box bb-0"><span class="boxtext text-dark"></span></div>
+                <div class="box bb-0 br-0"><span class="boxtext text-dark"></span></div>
+            </div>
+            <div class="gameInfo">
+                <h1>Welcome to Tic Tac Toe</h1>
+                <div>
+                    <span class="info text-light">Turn for X</span>
+                    <button id="reset">Reset</button>
+                </div>
+                <div class="imgbox">
+                    <img src="excited.gif" alt="Error">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- major project with external link -->
+    <a name="weather"></a>
+    <h1 class="mx-5 my-4"><span>M</span>ajor <span>P</span>rojects</h1>
+    <div class="card mb-3 border-0" style="max-width: 80%; margin: 0 auto;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/900x900/?weather,forcast,lightning"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">Weather App</h3> <br>
+                    <p class="card-text">This is a real time weather forcast application. This shows the temperature and
+                        weather information of some perticular locations. Some important featurs of this project are
+                        mentioned
+                        below:
+                    <ul>
+                        <li>User frindly and easy to use.</li>
+                        <li>Made by use of HTML, CSS & JavaScript.</li>
+                        <li>Uses the fetch API call</li>
+                        <li>Fully responsive, functional and compatible for mobiles also.</li>
+                        <li><a href="https://github.com/sak03/weatherApp" target="blank">GitHub repositorie link
+                                >></a></li>
+                    </ul>
+                    </p>
+                    <a href="https://sak03.github.io/weatherApp/" class="btn btn-outline-primary" target="blank">Project
+                        preview</a>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+    <a name="library"></a>
+    <div class="card mb-3 border-0" style="max-width: 80%; margin: 0 auto;">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">Public Lbrary</h3> <br>
+                    <p class="card-text">This website is all about landing view of Libraries. Here we consider some
+                        important points to make this happen. Some important featurs of this project are mentioned
+                        below:
+                    <ul>
+                        <li>User frindly and easy to use.</li>
+                        <li>Made by use of HTML, CSS & JavaScript.</li>
+                        <li>No any library and frameworks are used.</li>
+                        <li>Fully responsive and compatible for mobiles also.</li>
+                        <li><a href="https://github.com/sak03/publicLibrary" target="blank">GitHub repositorie link
+                                >></a></li>
+                    </ul>
+                    </p>
+                    <a href="https://sak03.github.io/publicLibrary/" class="btn btn-outline-primary"
+                        target="blank">Project preview</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/900x900/?books,college,library" class="img-fluid rounded-start"
+                    alt="...">
+            </div>
+        </div>
+    </div> <br>
+
+    <a name="electroForce"></a>
+    <div class="card mb-3 border-0" style="max-width: 80%; margin: 0 auto;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/900x900/?fan,bulb" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">ElectroForce</h3> <br>
+                    <p class="card-text">This is basically a landing page of electrical and electronics company named
+                        EletroForce. This is completely made by using Bootstrap. Some important featurs of this project
+                        are mentioned below:
+                    <ul>
+                        <li>User frindly and easy to use.</li>
+                        <li>Made by use of Bootstrap & JS.</li>
+                        <li>Carousel and Cards also used in this project.</li>
+                        <li>Fully responsive and compatible for mobiles also.</li>
+                        <li><a href="https://github.com/sak03/ElectroForce" target="blank">GitHub repositorie link
+                                >></a></li>
+                    </ul>
+                    </p>
+                    <a href="https://sak03.github.io/ElectroForce/" class="btn btn-outline-primary"
+                        target="blank">Project preview</a>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+    <a name="textUtils"></a>
+    <div class="card mb-3 border-0" style="max-width: 80%; margin: 0 auto;">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">TextUtils</h3>
+                    <h3 class="text-danger "> &#9888; COMMING SOON </h3>
+                    <p class="card-text">This website is all about the textUtils where we change the text by various
+                        methods. Some important featurs of this project are mentioned below:
+                    <ul>
+                        <li>User frindly and easy to use.</li>
+                        <li>Made by use of React JS & Bootstrap.</li>
+                        <li>feature of dark mode enable added</li>
+                        <li>Fully functional, responsive and compatible for mobiles also.</li>
+                        <li><a href="https://github.com/sak03/textUtils" target="blank">GitHub repositorie link
+                                >></a></li>
+                    </ul>
+                    </p>
+                    <a href="https://sak03.github.io/textUtils/" class="btn btn-outline-primary" target="blank">Project
+                        preview</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/900x900/?font,text,word" class="img-fluid rounded-start"
+                    alt="...">
+            </div>
+        </div>
+    </div><br> <br>
+
+    <!-- code of about me  -->
+    <a name="aboutMe"></a>
+
+    <div class="card mb-3 w-75" style="max-width: 100vw; margin: 0 auto;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="photo2.jpeg" class="img-fluid rounded-start py-0" alt="Error" title="Sartaj"
+                    style=" border-radius: 1vw;  box-shadow: 0.5vw 0.25vw 0 rgba(168, 144, 144, 0.918);">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">About <span>Me</span></h2>
+                    <h5>Front End Developer</h5>
+                    <p class="card-text">
+                        I'm Sartaj Alam, and my portfolio is the repration of all that I've learned and accomplished as
+                        a
+                        science
+                        and engineering student. <br> I design websites for small businesses. While I'm based in New
+                        Delhi,
+                        India. I help to build websites for people all over the world. <br> I love designing websites
+                        and am
+                        looking for more opportunities to work in coding. <br> I did my B.Tech in Electrical Engineering
+                        from
+                        Jamia Millia Islamia, New Delhi. <br> I did M.Tech(EE) in Power System and Drives from Zakir
+                        Hussain
+                        College of Engineering and Technology, AMU, Aligarh.
+                    </p> <br>
+                    <a class="btn btn-outline-info"
+                        href="https://s3.amazonaws.com/attachments.angel.co/6583063-dcbacfa740c87af67cf4cb4e3edf0eee.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJS6W3HGZGRJIRBTA%2F20220125%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220125T025114Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=eaffe79c4753c405ff564622f39db5ce08e78f295cb1537b0ea527011a5ba6fb"
+                        target="blank" role="button">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+    <!-- contact information -->
+    <a name="contact"></a>
+    <h1 class="mx-5 my-4"><span>C</span>ontact <span>I</span>nfo</h1>
+
+    <div class="row ms-lg-5">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0 conct">
+                    <div class="col-md-4">
+                        <img src="phone_logo.png" class="img-fluid rounded-start" alt="Error">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">+91-9958564890</p>
+                            <p class="card-text">+91-8512002184</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0 conct">
+                    <div class="col-md-3">
+                        <img src="email_logo.png" class="img-fluid rounded-start" alt="Error">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <p class="card-text">sartaj2394@gmail.com</p>
+                            <p class="card-text"> im.master.023@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0 conct">
+                    <div class="col-md-4">
+                        <img src="map-marker_logo.png" class="img-fluid rounded-start" alt="Error">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">Jamia Nagar, Okhla,</p>
+                            <p class="card-text">New Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer details -->
+    <footer class="bg-dark Text-white foot">
+        <div class="container text-center text-md-start bg-dark foot">
+            <div class="row text-center">
+
+                <div class="col-md-4 col-lg-4 mt-3 w-auto">
+                    <h3 class="mb-4 text-white"> <span>S</span>ARTAJ <span>A</span>LAM</h3>
+                    <p class="text-white">Your Complete Web Solution</p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-3 mt-3 w-auto">
+                    <h3 class="mb-4 text-white text-warning"> <span>S</span>kills</h3>
+                    <p> <a href="#skills" class="text-white" style="text-decoration:none">Front End Web Developer</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 mx-3 w-auto" style="flex: right;">
+                    <div class="text-center text-md-right">
+                        <h3 class="mb-4 text-center text-white">Follow <span>Us</span></h3>
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"> <a href="https://linkedin.com/in/sartaj-alam-7a520b106"
+                                    class="btn-floating btn-sm text-white" target="blank" style="font-size: 23px;"> <i
+                                        class="fab fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"> <a href="https://github.com/sak03"
+                                    class="btn-floating btn-sm text-white" target="blank" style="font-size: 23px;">
+                                    <i class="fab fa-github-square"></i></a></li>
+                            <li class="list-inline-item"> <a href="https://www.facebook.com/"
+                                    class="btn-floating btn-sm text-white" target="blank" style="font-size: 23px;">
+                                    <i class="fab fa-facebook-square"></i></a></li>
+                            <li class="list-inline-item"> <a href="https://twitter.com/sartaj_03"
+                                    class="btn-floating btn-sm text-white" target="blank" style="font-size: 23px;">
+                                    <i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"> <a href="https://www.instagram.com/"
+                                    class="btn-floating btn-sm text-white" target="blank" style="font-size: 23px;">
+                                    <i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="color: white;">
+
+        <div class="row align-items-center">
+            <div class="col-md-8  col-lg-12 text-center">
+                <p class="text-white"> &emsp; Copyright &emsp; &copy; All rights researved by: <a href="#"
+                        class="text-light hovr" style="text-decoration: none;"> &emsp;
+                        &emsp;<span>S</span>arta
+                        <span>A</span>lam</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- local JavaScript file -->
+    <script src="mini_projects.js"></script>
+
+    <!-- font awsome tootkit -->
+    <script src="https://kit.fontawesome.com/c9ecf02115.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

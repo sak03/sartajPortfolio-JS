@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+span {
+  color: red;
+  font-family: "Roboto", sans-serif;
+}
+.hovr:hover {
+  color: red !important;
+}
+.bg-nav {
+  background: rgba(0, 0, 0, 0.5) url("bg_photo.jpg") !important;
+  background-size: cover !important;
+  background-blend-mode: darken !important;
+  background-repeat: no-repeat !important;
+  width: 100% !important;
+}
+
+.container1 {
+  background: rgba(0, 0, 0, 0.5) url("bg_photo.jpg") !important;
+  background-size: cover !important;
+  background-blend-mode: darken !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100vh;
+  overflow-x: hidden !important;
+  height: auto;
+  width: 100%;
+  border: none !important;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* code for about me section */
+.aboutMe {
+  width: 75vw;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+.abt > img {
+  width: 28vw;
+  height: 70vh;
+  border-radius: 1vw;
+  box-shadow: 1vw 1.5vw 0 rgba(168, 144, 144, 0.918);
+}
+
+.conct {
+  background-color: rgba(212, 202, 121, 0.856);
+  box-shadow: 5px 5px 0 grey;
+}
+
+.foot {
+  width: 100% !important;
+  height: auto !important;
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.digiClock {
+  display: none;
+  margin: 0 auto;
+  width: 87vw;
+  height: auto;
+}
+.container {
+  width: 90vw;
+  height: 80vh;
+  /* margin: 0 auto; */
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 10, 82);
+}
+.datetime {
+  color: snow;
+  background-color: #10101e;
+  width: 65vw;
+  height: 15vw;
+  padding: 2vw 2vw;
+  border: 1px solid blue;
+  border-radius: 1vh;
+  box-shadow: 1vw 1vw 1vw rgb(65, 61, 45);
+}
+.date {
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  display: flex;
+  margin: 0 2vw;
+  padding: 0 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.date > span {
+  margin: 0 1vw;
+}
+.time {
+  position: relative;
+  margin: 0 2vw;
+  font-size: 5vw;
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1vw;
+}
+.time span:last-child {
+  background-color: rgb(4, 4, 248);
+  border: 1px solid white;
+  border-radius: 0.5vw;
+  color: white;
+  font-size: 2vw;
+  height: 3vw;
+}

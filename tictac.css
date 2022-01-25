@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat:wght@200&family=Roboto&display=swap");
+
+.tictac {
+  display: none;
+  width: 85vw;
+  height: auto;
+  margin: 0 auto;
+}
+.gameContainer {
+  background-color: rgba(135, 151, 156, 0.795);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh 5vh 0 5vh;
+  justify-content: center;
+  border-radius: 1vw;
+}
+.containerTictac {
+  margin-left: 6vw;
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  font-family: "Roboto", sans-serif;
+}
+.box {
+  margin: 0;
+  padding: auto;
+  border: 1px solid black;
+  font-size: 10vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgba(128, 128, 128, 0.596);
+}
+.gameInfo {
+  padding: 0 3vh;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.imgbox img {
+  width: 0vw;
+  transition: width 1s ease-in-out;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.br-0 {
+  border-right: 0;
+}
+.info {
+  font-size: 5vh;
+}
+#reset {
+  margin: 0 5vw;
+  width: 15vw;
+  height: 6vh;
+  border-radius: 1vw;
+  font-size: 2vw;
+  background-color: rgb(15, 238, 15);
+}
+#reset:hover {
+  background-color: rgb(247, 7, 7);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .container {
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+  }
+  .gameInfo {
+    margin-top: 5vh;
+  }
+}
