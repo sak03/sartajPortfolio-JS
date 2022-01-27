@@ -6,10 +6,10 @@
 body {
   overflow-x: hidden;
 }
-/* span {
+span {
   color: red;
   font-family: "Roboto", sans-serif;
-} */
+}
 .hovr:hover {
   color: red !important;
 }
