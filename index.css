@@ -39,7 +39,14 @@ span {
 h1 {
   font-family: "Roboto", sans-serif;
 }
-
+.blinkMe {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 /* code for about me section */
 .aboutMe {
   width: 75vw;
