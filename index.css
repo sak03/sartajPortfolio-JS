@@ -21,6 +21,10 @@ span {
   width: 100% !important;
 }
 
+.fontFam {
+  font-family: "Roboto", sans-serif;
+}
+
 .container1 {
   background: rgba(0, 0, 0, 0.5) url("bg_photo.jpg") !important;
   background-size: cover !important;
